@@ -1,0 +1,2 @@
+Hello this is a simple short text.
+Привет это простая короткая строка.

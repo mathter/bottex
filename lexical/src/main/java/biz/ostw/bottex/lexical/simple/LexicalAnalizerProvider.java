@@ -1,4 +1,4 @@
-package biz.ostw.bottex.lexical.common;
+package biz.ostw.bottex.lexical.simple;
 
 import biz.ostw.bottex.lexical.LexicalAnalizerBuilder;
 
@@ -7,11 +7,11 @@ import biz.ostw.bottex.lexical.LexicalAnalizerBuilder;
  */
 public class LexicalAnalizerProvider implements biz.ostw.bottex.lexical.LexicalAnalizerProvider
 {
-    private static final String NAME = "RuLexicalAnalizer";
+    private static final String NAME = "SimpleAnalizerProvider";
 
     public LexicalAnalizerBuilder getBuilder( )
     {
-        return new biz.ostw.bottex.lexical.common.LexicalAnalizerBuilder();
+        return new biz.ostw.bottex.lexical.simple.LexicalAnalizerBuilder();
     }
 
     @Override
