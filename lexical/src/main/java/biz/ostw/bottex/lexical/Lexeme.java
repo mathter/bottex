@@ -5,4 +5,5 @@ package biz.ostw.bottex.lexical;
  */
 public interface Lexeme extends CharSequence
 {
+    public Type getType();
 }

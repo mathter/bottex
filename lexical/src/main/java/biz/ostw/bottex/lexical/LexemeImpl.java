@@ -1,19 +1,26 @@
 package biz.ostw.bottex.lexical;
 
-import java.util.Arrays;
-
 public class LexemeImpl implements Lexeme
 {
     private final char[] buf;
 
-    public LexemeImpl( char[] buf )
+    private final Type type;
+
+    public LexemeImpl( Type type, char[] buf )
     {
-        if ( buf == null )
+        if ( type == null || buf == null )
         {
             throw new NullPointerException();
         }
 
         this.buf = buf;
+        this.type = type;
+    }
+
+    @Override
+    public Type getType()
+    {
+        return this.type;
     }
 
     @Override

@@ -47,6 +47,7 @@ class LexicalAnalizer implements biz.ostw.bottex.lexical.LexicalAnalizer
 
     private Lexeme build( Token token )
     {
-        return token.getType() != simple.EOF ? new LexemeImpl( token.getText().toCharArray() ) : null;
+        return token.getType() != simple.EOF ? new LexemeImpl( Translator.translate( token.getType() ), token.getText().toCharArray() )
+            : null;
     }
 }
