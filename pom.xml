@@ -16,6 +16,7 @@
 
 	<modules>
 		<module>lexical</module>
+		<module>tools</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>
