@@ -12,6 +12,8 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.ext.DefaultHandler2;
 
+import biz.ostw.bottex.morphological.POST;
+
 /**
  * @author mathter
  */
@@ -128,7 +130,7 @@ final class ContextHandler extends DefaultHandler2
 
             if ( POST.contains( v ) )
             {
-                ( (LF) this.stack.peek() ).lemma.post = biz.ostw.bottex.org.opencorpora.importer.v0_92.POST.get( v );
+                ( (LF) this.stack.peek() ).lemma.post = biz.ostw.bottex.morphological.POST.get( v );
             }
 
             item = UNKNOWN;
@@ -172,7 +174,7 @@ final class ContextHandler extends DefaultHandler2
     static
     {
         Set< String > tmp = new TreeSet<>();
-        for ( POST post : biz.ostw.bottex.org.opencorpora.importer.v0_92.POST.values() )
+        for ( POST post : biz.ostw.bottex.morphological.POST.values() )
         {
             tmp.add( post.name() );
         }

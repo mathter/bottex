@@ -3,6 +3,8 @@ package biz.ostw.bottex.org.opencorpora.importer.v0_92;
 import java.util.ArrayList;
 import java.util.List;
 
+import biz.ostw.bottex.morphological.POST;
+
 /**
  * @author mathter
  */

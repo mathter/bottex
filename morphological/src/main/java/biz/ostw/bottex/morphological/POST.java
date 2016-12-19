@@ -1,4 +1,4 @@
-package biz.ostw.bottex.org.opencorpora.importer.v0_92;
+package biz.ostw.bottex.morphological;
 
 /**
  * @author mathter
