@@ -8,7 +8,7 @@ import biz.ostw.bottex.morphological.POST;
 /**
  * @author mathter
  */
-class Lemma extends Item
+public class Lemma extends Item
 {
     private static final long serialVersionUID = 1368654081679443156L;
 
@@ -18,7 +18,7 @@ class Lemma extends Item
 
     POST post;
 
-    String text;
+    public String text;
 
-    final List< String > forms = new ArrayList<>();
+    public final List< String > forms = new ArrayList<>();
 }

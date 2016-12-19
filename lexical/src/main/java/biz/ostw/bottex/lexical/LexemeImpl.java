@@ -18,6 +18,12 @@ public class LexemeImpl implements Lexeme
     }
 
     @Override
+    public char[] asCharArray()
+    {
+        return this.buf;
+    }
+
+    @Override
     public Type getType()
     {
         return this.type;

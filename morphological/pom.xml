@@ -6,4 +6,10 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>morphological</artifactId>
+  <dependencies>
+  	<dependency>
+  		<groupId>biz.ostw.bottex</groupId>
+  		<artifactId>lexical</artifactId>
+  	</dependency>
+  </dependencies>
 </project>

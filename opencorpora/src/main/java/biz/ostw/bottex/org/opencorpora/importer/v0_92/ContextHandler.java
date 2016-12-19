@@ -3,6 +3,7 @@ package biz.ostw.bottex.org.opencorpora.importer.v0_92;
 import java.util.ArrayDeque;
 import java.util.Collections;
 import java.util.Deque;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -17,7 +18,7 @@ import biz.ostw.bottex.morphological.POST;
 /**
  * @author mathter
  */
-final class ContextHandler extends DefaultHandler2
+public final class ContextHandler extends DefaultHandler2
 {
     private static final Logger LOGGER = LoggerFactory.getLogger( ContextHandler.class );
 
@@ -169,6 +170,11 @@ final class ContextHandler extends DefaultHandler2
     public Dictionary getDictionary()
     {
         return this.dictionary;
+    }
+
+    public List< Lemma > getLemmata()
+    {
+        return this.dictionary.lemmata.lemmas;
     }
 
     static
