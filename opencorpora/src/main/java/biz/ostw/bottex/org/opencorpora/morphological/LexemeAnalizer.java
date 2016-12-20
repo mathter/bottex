@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import biz.ostw.bottex.lexical.Lexeme;
+import biz.ostw.bottex.lexical.Type;
 import biz.ostw.bottex.morphological.MorphLexeme;
 import biz.ostw.bottex.org.opencorpora.importer.v0_92.Lemma;
 
@@ -20,15 +21,32 @@ class LexemeAnalizer implements biz.ostw.bottex.morphological.LexemeAnalizer
     }
 
     @Override
-    public List< MorphLexeme > analize( Lexeme lexeme )
+    public List< MorphLexeme > analize( final Lexeme lexeme )
     {
         List< MorphLexeme > result = new ArrayList<>();
 
         if ( lexeme != null )
         {
-            this.lemmas.stream().filter( l -> l.text.equals( String.valueOf( lexeme ) ) ).forEach( l -> {
-                result.add( new MorphLexemeImpl( lexeme.getType(), lexeme.asCharArray() ) );
-            } );;
+            if ( Type.WORD == lexeme.getType() )
+            {
+                this.lemmas.stream().filter( l -> {
+
+                    return l.text.equals( lexeme.toString() ) || l.forms.stream().anyMatch( f -> f.equals( lexeme.toString() ) );
+                } ).forEach( l -> {
+
+                    MorphLexemeImpl morphLexeme = new MorphLexemeImpl( lexeme.getType(), lexeme.asCharArray() );
+                    morphLexeme.normalized = l.text;
+                    morphLexeme.post = l.post;
+
+                    result.add( morphLexeme );
+                } );
+            } else
+            {
+                MorphLexemeImpl morphLexeme = new MorphLexemeImpl( lexeme.getType(), lexeme.asCharArray() );
+                morphLexeme.normalized = lexeme.toString();
+
+                result.add( morphLexeme );
+            }
         }
 
         return result;

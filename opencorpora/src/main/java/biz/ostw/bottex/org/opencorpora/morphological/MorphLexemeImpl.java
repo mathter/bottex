@@ -10,6 +10,12 @@ import biz.ostw.bottex.morphological.POST;
  */
 public class MorphLexemeImpl extends LexemeImpl implements MorphLexeme
 {
+    private static final long serialVersionUID = -1980483257448983328L;
+
+    POST post;
+
+    CharSequence normalized;
+
     public MorphLexemeImpl( Type type, char[] buf )
     {
         super( type, buf );
@@ -18,14 +24,19 @@ public class MorphLexemeImpl extends LexemeImpl implements MorphLexeme
     @Override
     public POST getPost()
     {
-        // TODO Auto-generated method stub
-        return null;
+        return post;
     }
 
     @Override
     public CharSequence getNormalized()
     {
-        // TODO Auto-generated method stub
-        return null;
+        return this.normalized;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "MorphLexemeImpl [post=" + post + ", normalized=" + normalized + ", type=" + getType() + ", origin=" + super.toString()
+            + "]";
     }
 }

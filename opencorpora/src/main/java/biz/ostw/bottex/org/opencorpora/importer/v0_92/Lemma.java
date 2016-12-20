@@ -16,7 +16,7 @@ public class Lemma extends Item
 
     int rev;
 
-    POST post;
+    public POST post;
 
     public String text;
 
