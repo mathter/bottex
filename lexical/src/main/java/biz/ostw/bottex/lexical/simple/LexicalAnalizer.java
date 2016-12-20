@@ -2,6 +2,10 @@ package biz.ostw.bottex.lexical.simple;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.util.Spliterator;
+import java.util.Spliterators;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CharStream;
@@ -29,7 +33,8 @@ class LexicalAnalizer implements biz.ostw.bottex.lexical.LexicalAnalizer
         this.commonTokenStream = new CommonTokenStream( lexer );
     }
 
-    public Lexeme next() throws IOException
+    @Override
+    public Lexeme next()
     {
         if ( this.index < 0 )
         {
@@ -43,6 +48,28 @@ class LexicalAnalizer implements biz.ostw.bottex.lexical.LexicalAnalizer
         {
             return null;
         }
+    }
+
+    @Override
+    public boolean hasNext()
+    {
+        if ( this.index < 0 )
+        {
+            this.commonTokenStream.fill();
+        }
+        
+        return this.index < this.commonTokenStream.size() - 2;
+    }
+
+    @Override
+    public Stream< Lexeme > streem()
+    {
+        return StreamSupport.stream( spliterator(), false );
+    }
+
+    private Spliterator< Lexeme > spliterator()
+    {
+        return Spliterators.spliterator( this, this.commonTokenStream.size(), Spliterator.IMMUTABLE );
     }
 
     private Lexeme build( Token token )

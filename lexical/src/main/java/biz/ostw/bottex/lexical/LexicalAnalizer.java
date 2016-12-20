@@ -1,11 +1,12 @@
 package biz.ostw.bottex.lexical;
 
-import java.io.IOException;
+import java.util.Iterator;
+import java.util.stream.Stream;
 
 /**
  * @author mathter
  */
-public interface LexicalAnalizer
+public interface LexicalAnalizer extends Iterator< Lexeme >
 {
-    public Lexeme next() throws IOException;
+    public Stream< Lexeme > streem();
 }

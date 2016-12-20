@@ -3,7 +3,7 @@ package biz.ostw.bottex.org.opencorpora.importer.v0_92;
 /**
  * @author mathter
  */
-class Dictionary extends Item
+public class Dictionary extends Item
 {
     private static final long serialVersionUID = 2837730765786311143L;
 

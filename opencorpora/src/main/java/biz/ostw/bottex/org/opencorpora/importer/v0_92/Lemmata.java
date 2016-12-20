@@ -6,7 +6,9 @@ import java.util.List;
 /**
  * @author mathter
  */
-public class Lemmata extends Item
+class Lemmata extends Item
 {
+    private static final long serialVersionUID = -6747028050916345080L;
+
     final List< Lemma > lemmas = new ArrayList<>();
 }

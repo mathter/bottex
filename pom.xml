@@ -17,6 +17,8 @@
 	<modules>
 		<module>lexical</module>
 		<module>tools</module>
+		<module>morphological</module>
+		<module>opencorpora</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>
@@ -54,6 +56,21 @@
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
 				<version>1.2.17</version>
+			</dependency>
+			<dependency>
+				<groupId>biz.ostw.bottex</groupId>
+				<artifactId>lexical</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>biz.ostw.bottex</groupId>
+				<artifactId>morphological</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>biz.ostw.bottex</groupId>
+				<artifactId>opencorpora</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

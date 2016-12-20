@@ -2,6 +2,8 @@ package biz.ostw.bottex.lexical;
 
 public class LexemeImpl implements Lexeme
 {
+    private static final long serialVersionUID = 4535258964475322455L;
+
     private final char[] buf;
 
     private final Type type;
@@ -15,6 +17,12 @@ public class LexemeImpl implements Lexeme
 
         this.buf = buf;
         this.type = type;
+    }
+
+    @Override
+    public char[] asCharArray()
+    {
+        return this.buf;
     }
 
     @Override

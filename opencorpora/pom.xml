@@ -6,14 +6,26 @@
 		<artifactId>parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>tools</artifactId>
+	<artifactId>opencorpora</artifactId>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
 
 		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>biz.ostw.bottex</groupId>
-			<artifactId>opencorpora</artifactId>
+			<artifactId>morphological</artifactId>
 		</dependency>
 	</dependencies>
 </project>

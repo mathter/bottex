@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<dictionary version="0.92" revision="394635">
+	<lemmata>
+		<lemma id="390125" rev="394286">
+			<l t="инородность">
+				<g v="NOUN" />
+				<g v="inan" />
+				<g v="femn" />
+			</l>
+			<f t="инородность">
+				<g v="sing" />
+				<g v="nomn" />
+			</f>
+			<f t="инородности">
+				<g v="sing" />
+				<g v="gent" />
+			</f>
+			<f t="инородности">
+				<g v="sing" />
+				<g v="datv" />
+			</f>
+			<f t="инородность">
+				<g v="sing" />
+				<g v="accs" />
+			</f>
+			<f t="инородностью">
+				<g v="sing" />
+				<g v="ablt" />
+			</f>
+			<f t="инородности">
+				<g v="sing" />
+				<g v="loct" />
+			</f>
+			<f t="инородности">
+				<g v="plur" />
+				<g v="nomn" />
+			</f>
+			<f t="инородностей">
+				<g v="plur" />
+				<g v="gent" />
+			</f>
+			<f t="инородностям">
+				<g v="plur" />
+				<g v="datv" />
+			</f>
+			<f t="инородности">
+				<g v="plur" />
+				<g v="accs" />
+			</f>
+			<f t="инородностями">
+				<g v="plur" />
+				<g v="ablt" />
+			</f>
+			<f t="инородностях">
+				<g v="plur" />
+				<g v="loct" />
+			</f>
+		</lemma>
+		<lemma id="390126" rev="394287">
+			<l t="криворукость">
+				<g v="NOUN" />
+				<g v="inan" />
+				<g v="femn" />
+				<g v="Sgtm" />
+			</l>
+			<f t="криворукость">
+				<g v="sing" />
+				<g v="nomn" />
+			</f>
+			<f t="криворукости">
+				<g v="sing" />
+				<g v="gent" />
+			</f>
+			<f t="криворукость">
+				<g v="sing" />
+				<g v="accs" />
+			</f>
+			<f t="криворукостью">
+				<g v="sing" />
+				<g v="ablt" />
+			</f>
+			<f t="криворукости">
+				<g v="sing" />
+				<g v="loct" />
+			</f>
+		</lemma>
+		<lemma id="390127" rev="394288">
+			<l t="нелегитимность">
+				<g v="NOUN" />
+				<g v="inan" />
+				<g v="femn" />
+				<g v="Sgtm" />
+			</l>
+			<f t="нелегитимность">
+				<g v="sing" />
+				<g v="nomn" />
+			</f>
+			<f t="нелегитимности">
+				<g v="sing" />
+				<g v="gent" />
+			</f>
+			<f t="нелегитимности">
+				<g v="sing" />
+				<g v="datv" />
+			</f>
+			<f t="нелегитимность">
+				<g v="sing" />
+				<g v="accs" />
+			</f>
+			<f t="нелегитимностью">
+				<g v="sing" />
+				<g v="ablt" />
+			</f>
+			<f t="нелегитимности">
+				<g v="sing" />
+				<g v="loct" />
+			</f>
+		</lemma>
+		<lemma id="390128" rev="394289">
+			<l t="непостижимость">
+				<g v="NOUN" />
+				<g v="inan" />
+				<g v="femn" />
+				<g v="Sgtm" />
+			</l>
+			<f t="непостижимость">
+				<g v="sing" />
+				<g v="nomn" />
+			</f>
+			<f t="непостижимости">
+				<g v="sing" />
+				<g v="gent" />
+			</f>
+			<f t="непостижимости">
+				<g v="sing" />
+				<g v="datv" />
+			</f>
+			<f t="непостижимость">
+				<g v="sing" />
+				<g v="accs" />
+			</f>
+			<f t="непостижимостью">
+				<g v="sing" />
+				<g v="ablt" />
+			</f>
+			<f t="непостижимости">
+				<g v="sing" />
+				<g v="loct" />
+			</f>
+		</lemma>
+		<lemma id="390129" rev="394290">
+			<l t="пн">
+				<g v="NOUN" />
+				<g v="inan" />
+				<g v="masc" />
+				<g v="Fixd" />
+				<g v="Abbr" />
+			</l>
+			<f t="пн">
+				<g v="sing" />
+				<g v="nomn" />
+			</f>
+			<f t="пн">
+				<g v="sing" />
+				<g v="gent" />
+			</f>
+			<f t="пн">
+				<g v="sing" />
+				<g v="datv" />
+			</f>
+			<f t="пн">
+				<g v="sing" />
+				<g v="accs" />
+			</f>
+			<f t="пн">
+				<g v="sing" />
+				<g v="ablt" />
+			</f>
+			<f t="пн">
+				<g v="sing" />
+				<g v="loct" />
+			</f>
+			<f t="пн">
+				<g v="plur" />
+				<g v="nomn" />
+			</f>
+			<f t="пн">
+				<g v="plur" />
+				<g v="gent" />
+			</f>
+			<f t="пн">
+				<g v="plur" />
+				<g v="datv" />
+			</f>
+			<f t="пн">
+				<g v="plur" />
+				<g v="accs" />
+			</f>
+			<f t="пн">
+				<g v="plur" />
+				<g v="ablt" />
+			</f>
+			<f t="пн">
+				<g v="plur" />
+				<g v="loct" />
+			</f>
+		</lemma>
+		<lemma id="390130" rev="394291">
+			<l t="чт">
+				<g v="NOUN" />
+				<g v="inan" />
+				<g v="masc" />
+				<g v="Fixd" />
+				<g v="Abbr" />
+			</l>
+			<f t="чт">
+				<g v="sing" />
+				<g v="nomn" />
+			</f>
+			<f t="чт">
+				<g v="sing" />
+				<g v="gent" />
+			</f>
+			<f t="чт">
+				<g v="sing" />
+				<g v="datv" />
+			</f>
+			<f t="чт">
+				<g v="sing" />
+				<g v="accs" />
+			</f>
+			<f t="чт">
+				<g v="sing" />
+				<g v="ablt" />
+			</f>
+			<f t="чт">
+				<g v="sing" />
+				<g v="loct" />
+			</f>
+			<f t="чт">
+				<g v="plur" />
+				<g v="nomn" />
+			</f>
+			<f t="чт">
+				<g v="plur" />
+				<g v="gent" />
+			</f>
+			<f t="чт">
+				<g v="plur" />
+				<g v="datv" />
+			</f>
+			<f t="чт">
+				<g v="plur" />
+				<g v="accs" />
+			</f>
+			<f t="чт">
+				<g v="plur" />
+				<g v="ablt" />
+			</f>
+			<f t="чт">
+				<g v="plur" />
+				<g v="loct" />
+			</f>
+		</lemma>
+		<lemma id="390131" rev="394292">
+			<l t="пт">
+				<g v="NOUN" />
+				<g v="inan" />
+				<g v="femn" />
+				<g v="Fixd" />
+				<g v="Abbr" />
+			</l>
+			<f t="пт">
+				<g v="sing" />
+				<g v="nomn" />
+			</f>
+			<f t="пт">
+				<g v="sing" />
+				<g v="gent" />
+			</f>
+			<f t="пт">
+				<g v="sing" />
+				<g v="datv" />
+			</f>
+			<f t="пт">
+				<g v="sing" />
+				<g v="accs" />
+			</f>
+			<f t="пт">
+				<g v="sing" />
+				<g v="ablt" />
+			</f>
+			<f t="пт">
+				<g v="sing" />
+				<g v="loct" />
+			</f>
+			<f t="пт">
+				<g v="plur" />
+				<g v="nomn" />
+			</f>
+			<f t="пт">
+				<g v="plur" />
+				<g v="gent" />
+			</f>
+			<f t="пт">
+				<g v="plur" />
+				<g v="datv" />
+			</f>
+			<f t="пт">
+				<g v="plur" />
+				<g v="accs" />
+			</f>
+			<f t="пт">
+				<g v="plur" />
+				<g v="ablt" />
+			</f>
+			<f t="пт">
+				<g v="plur" />
+				<g v="loct" />
+			</f>
+		</lemma>
+		<lemma id="390132" rev="394293">
+			<l t="сб">
+				<g v="NOUN" />
+				<g v="inan" />
+				<g v="femn" />
+				<g v="Fixd" />
+				<g v="Abbr" />
+			</l>
+			<f t="сб">
+				<g v="sing" />
+				<g v="nomn" />
+			</f>
+			<f t="сб">
+				<g v="sing" />
+				<g v="gent" />
+			</f>
+			<f t="сб">
+				<g v="sing" />
+				<g v="datv" />
+			</f>
+			<f t="сб">
+				<g v="sing" />
+				<g v="accs" />
+			</f>
+			<f t="сб">
+				<g v="sing" />
+				<g v="ablt" />
+			</f>
+			<f t="сб">
+				<g v="sing" />
+				<g v="loct" />
+			</f>
+			<f t="сб">
+				<g v="plur" />
+				<g v="nomn" />
+			</f>
+			<f t="сб">
+				<g v="plur" />
+				<g v="gent" />
+			</f>
+			<f t="сб">
+				<g v="plur" />
+				<g v="datv" />
+			</f>
+			<f t="сб">
+				<g v="plur" />
+				<g v="accs" />
+			</f>
+			<f t="сб">
+				<g v="plur" />
+				<g v="ablt" />
+			</f>
+			<f t="сб">
+				<g v="plur" />
+				<g v="loct" />
+			</f>
+		</lemma>
+		<lemma id="390133" rev="394294">
+			<l t="вс">
+				<g v="NOUN" />
+				<g v="inan" />
+				<g v="neut" />
+				<g v="Fixd" />
+				<g v="Abbr" />
+			</l>
+			<f t="вс">
+				<g v="sing" />
+				<g v="nomn" />
+			</f>
+			<f t="вс">
+				<g v="sing" />
+				<g v="gent" />
+			</f>
+			<f t="вс">
+				<g v="sing" />
+				<g v="datv" />
+			</f>
+			<f t="вс">
+				<g v="sing" />
+				<g v="accs" />
+			</f>
+			<f t="вс">
+				<g v="sing" />
+				<g v="ablt" />
+			</f>
+			<f t="вс">
+				<g v="sing" />
+				<g v="loct" />
+			</f>
+			<f t="вс">
+				<g v="plur" />
+				<g v="nomn" />
+			</f>
+			<f t="вс">
+				<g v="plur" />
+				<g v="gent" />
+			</f>
+			<f t="вс">
+				<g v="plur" />
+				<g v="datv" />
+			</f>
+			<f t="вс">
+				<g v="plur" />
+				<g v="accs" />
+			</f>
+			<f t="вс">
+				<g v="plur" />
+				<g v="ablt" />
+			</f>
+			<f t="вс">
+				<g v="plur" />
+				<g v="loct" />
+			</f>
+		</lemma>
+		<lemma id="390134" rev="394295">
+			<l t="многопоточность">
+				<g v="NOUN" />
+				<g v="inan" />
+				<g v="femn" />
+			</l>
+			<f t="многопоточность">
+				<g v="sing" />
+				<g v="nomn" />
+			</f>
+			<f t="многопоточности">
+				<g v="sing" />
+				<g v="gent" />
+			</f>
+			<f t="многопоточности">
+				<g v="sing" />
+				<g v="datv" />
+			</f>
+			<f t="многопоточность">
+				<g v="sing" />
+				<g v="accs" />
+			</f>
+			<f t="многопоточностью">
+				<g v="sing" />
+				<g v="ablt" />
+			</f>
+			<f t="многопоточности">
+				<g v="sing" />
+				<g v="loct" />
+			</f>
+			<f t="многопоточности">
+				<g v="plur" />
+				<g v="nomn" />
+			</f>
+			<f t="многопоточностей">
+				<g v="plur" />
+				<g v="gent" />
+			</f>
+			<f t="многопоточностям">
+				<g v="plur" />
+				<g v="datv" />
+			</f>
+			<f t="многопоточности">
+				<g v="plur" />
+				<g v="accs" />
+			</f>
+			<f t="многопоточностями">
+				<g v="plur" />
+				<g v="ablt" />
+			</f>
+			<f t="многопоточностях">
+				<g v="plur" />
+				<g v="loct" />
+			</f>
+		</lemma>
+	</lemmata>
+</dictionary>

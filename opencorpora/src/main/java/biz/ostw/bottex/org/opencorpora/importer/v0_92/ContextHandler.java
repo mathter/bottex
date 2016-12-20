@@ -3,6 +3,7 @@ package biz.ostw.bottex.org.opencorpora.importer.v0_92;
 import java.util.ArrayDeque;
 import java.util.Collections;
 import java.util.Deque;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -12,10 +13,12 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.ext.DefaultHandler2;
 
+import biz.ostw.bottex.morphological.POST;
+
 /**
  * @author mathter
  */
-final class ContextHandler extends DefaultHandler2
+public final class ContextHandler extends DefaultHandler2
 {
     private static final Logger LOGGER = LoggerFactory.getLogger( ContextHandler.class );
 
@@ -128,7 +131,7 @@ final class ContextHandler extends DefaultHandler2
 
             if ( POST.contains( v ) )
             {
-                ( (LF) this.stack.peek() ).lemma.post = biz.ostw.bottex.org.opencorpora.importer.v0_92.POST.get( v );
+                ( (LF) this.stack.peek() ).lemma.post = biz.ostw.bottex.morphological.POST.get( v );
             }
 
             item = UNKNOWN;
@@ -169,10 +172,15 @@ final class ContextHandler extends DefaultHandler2
         return this.dictionary;
     }
 
+    public List< Lemma > getLemmata()
+    {
+        return this.dictionary.lemmata.lemmas;
+    }
+
     static
     {
         Set< String > tmp = new TreeSet<>();
-        for ( POST post : biz.ostw.bottex.org.opencorpora.importer.v0_92.POST.values() )
+        for ( POST post : biz.ostw.bottex.morphological.POST.values() )
         {
             tmp.add( post.name() );
         }
