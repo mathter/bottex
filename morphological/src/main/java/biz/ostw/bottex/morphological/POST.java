@@ -3,7 +3,7 @@ package biz.ostw.bottex.morphological;
 /**
  * @author mathter
  */
-public enum POST
+public enum POST implements MorphFlag
 {
     /**
      * Имя существительное

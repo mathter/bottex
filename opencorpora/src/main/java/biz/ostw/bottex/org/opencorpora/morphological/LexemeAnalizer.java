@@ -5,6 +5,7 @@ import java.util.List;
 
 import biz.ostw.bottex.lexical.Lexeme;
 import biz.ostw.bottex.lexical.Type;
+import biz.ostw.bottex.morphological.MorphFlag;
 import biz.ostw.bottex.morphological.MorphLexeme;
 import biz.ostw.bottex.org.opencorpora.importer.v0_92.Lemma;
 
@@ -34,21 +35,34 @@ class LexemeAnalizer implements biz.ostw.bottex.morphological.LexemeAnalizer
                     return l.text.equals( lexeme.toString() ) || l.forms.stream().anyMatch( f -> f.equals( lexeme.toString() ) );
                 } ).forEach( l -> {
 
-                    MorphLexemeImpl morphLexeme = new MorphLexemeImpl( lexeme.getType(), lexeme.asCharArray() );
+                    MorphLexemeImpl morphLexeme = new MorphLexemeImpl( lexeme.getType(), lexeme.asCharArray(), build( l.post ) );
                     morphLexeme.normalized = l.text;
-                    morphLexeme.post = l.post;
 
                     result.add( morphLexeme );
                 } );
             } else
             {
-                MorphLexemeImpl morphLexeme = new MorphLexemeImpl( lexeme.getType(), lexeme.asCharArray() );
-                morphLexeme.normalized = lexeme.toString();
+                MorphLexemeImpl morphLexeme = new MorphLexemeImpl( lexeme.getType(), lexeme.asCharArray(), build() );
 
                 result.add( morphLexeme );
             }
         }
 
         return result;
+    }
+
+    private static List< MorphFlag > build( MorphFlag ... flags )
+    {
+        List< MorphFlag > list = new ArrayList<>( 3 );
+
+        if ( flags != null )
+        {
+            for ( MorphFlag flag : flags )
+            {
+                list.add( flag );
+            }
+        }
+
+        return list;
     }
 }

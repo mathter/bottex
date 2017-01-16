@@ -12,6 +12,8 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 
 		<version.compiler.plugin>2.3.1</version.compiler.plugin>
+
+		<scala.version>2.12.1</scala.version>
 	</properties>
 
 	<modules>
@@ -19,7 +21,9 @@
 		<module>tools</module>
 		<module>morphological</module>
 		<module>opencorpora</module>
+		<module>semantic</module>
 	</modules>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -45,13 +49,13 @@
 				<artifactId>slf4j-api</artifactId>
 				<version>1.7.21</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-log4j12</artifactId>
 				<version>1.7.21</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
@@ -71,6 +75,11 @@
 				<groupId>biz.ostw.bottex</groupId>
 				<artifactId>opencorpora</artifactId>
 				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scala-lang</groupId>
+				<artifactId>scala-library</artifactId>
+				<version>${scala.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

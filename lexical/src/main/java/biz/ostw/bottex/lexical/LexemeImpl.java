@@ -1,5 +1,8 @@
 package biz.ostw.bottex.lexical;
 
+/**
+ * @author mathter
+ */
 public class LexemeImpl implements Lexeme
 {
     private static final long serialVersionUID = 4535258964475322455L;
