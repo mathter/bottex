@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>biz.ostw.bottex</groupId>
+		<groupId>tech.bottex</groupId>
 		<artifactId>parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
@@ -24,7 +24,7 @@
 			<artifactId>log4j</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>biz.ostw.bottex</groupId>
+			<groupId>tech.bottex</groupId>
 			<artifactId>morphological</artifactId>
 		</dependency>
 	</dependencies>

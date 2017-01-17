@@ -1,7 +1,10 @@
 build
 bin
 target
+.tmpBin
 .settings
 .gradle
 .classpath
 .project
+.cache-main
+_config.yml
