@@ -22,6 +22,7 @@ public class MorphLexemeImpl extends LexemeImpl implements MorphLexeme
     public MorphLexemeImpl( Type type, char[] buf, List< MorphFlag > morphFlags )
     {
         super( type, buf );
+        this.morphFlags = morphFlags;
     }
 
     @Override
@@ -40,5 +41,11 @@ public class MorphLexemeImpl extends LexemeImpl implements MorphLexeme
     public boolean contains( MorphFlag morphFlag )
     {
         return this.morphFlags.contains( morphFlag );
+    }
+
+    @Override
+    public String toString()
+    {
+        return "MorphLexemeImpl [morphFlags=" + morphFlags + ", normalized=" + normalized + "]";
     }
 }

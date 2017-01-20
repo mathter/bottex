@@ -9,8 +9,6 @@
 	<artifactId>tools</artifactId>
 
 	<dependencies>
-
-
 		<dependency>
 			<groupId>tech.bottex</groupId>
 			<artifactId>opencorpora</artifactId>

@@ -11,6 +11,7 @@ import org.junit.Test;
 
 import tech.bottex.lexical.CommonLexicalProviderFactory;
 import tech.bottex.lexical.LexicalAnalizer;
+import tech.bottex.morphological.Dump;
 import tech.bottex.morphological.LexemeAnalizer;
 import tech.bottex.morphological.LexemeAnalizerFactory;
 import tech.bottex.morphological.LexemeAnalizerFactoryService;
@@ -59,6 +60,7 @@ public class LexemeAnalizerFactoryTest
         LexicalAnalizer lexicalAnalizer = new CommonLexicalProviderFactory().newInstance( "SimpleAnalizerProvider" ).getBuilder()
             .build( new InputStreamReader( LexemeAnalizerFactoryTest.class.getResourceAsStream( "test.dict.opencorpora.txt" ) ), null );
 
-        lexicalAnalizer.streem().forEach( l -> System.out.println( lexemeAnalizer.analize( l ) ) );
+        lexicalAnalizer.streem()
+            .forEach( l -> lexemeAnalizer.analize( l ).stream().forEach( ml -> System.out.println( Dump.toString( ml ) ) ) );
     }
 }

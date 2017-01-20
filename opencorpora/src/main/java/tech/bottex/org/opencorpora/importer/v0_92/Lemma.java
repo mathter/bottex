@@ -3,7 +3,7 @@ package tech.bottex.org.opencorpora.importer.v0_92;
 import java.util.ArrayList;
 import java.util.List;
 
-import tech.bottex.morphological.POST;
+import tech.bottex.morphological.MorphFlag;
 
 /**
  * @author mathter
@@ -16,9 +16,15 @@ public class Lemma extends Item
 
     int rev;
 
-    public POST post;
+    public List< MorphFlag > morphFlags = new ArrayList<>( 3 );
 
     public String text;
 
     public final List< String > forms = new ArrayList<>();
+
+    @Override
+    public String toString()
+    {
+        return "Lemma []";
+    }
 }

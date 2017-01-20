@@ -1,11 +1,8 @@
 package tech.bottex.org.opencorpora.importer.v0_92;
 
 import java.util.ArrayDeque;
-import java.util.Collections;
 import java.util.Deque;
 import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,7 +10,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.ext.DefaultHandler2;
 
-import tech.bottex.morphological.POST;
+import tech.bottex.morphological.MorphFlag;
 
 /**
  * @author mathter
@@ -21,8 +18,6 @@ import tech.bottex.morphological.POST;
 public final class ContextHandler extends DefaultHandler2
 {
     private static final Logger LOGGER = LoggerFactory.getLogger( ContextHandler.class );
-
-    private static final Set< String > POST;
 
     private static final String TAG_DICTIONARY = "dictionary";
 
@@ -47,6 +42,8 @@ public final class ContextHandler extends DefaultHandler2
     private static final String TAG_G = "g";
 
     private static final Item UNKNOWN = new UnknownItem();
+
+    private static final Translate TRANSLATE = new Translate();
 
     private Deque< Item > stack = new ArrayDeque<>();
 
@@ -73,7 +70,7 @@ public final class ContextHandler extends DefaultHandler2
     {
         LOGGER.debug( "Parsing '{}' element...", qName, attributes.getLength() );
 
-        Item item;
+        final Item item;
 
         switch ( qName )
         {
@@ -128,10 +125,11 @@ public final class ContextHandler extends DefaultHandler2
 
         case TAG_G:
             String v = attributes.getValue( "v" );
+            MorphFlag flag = TRANSLATE.toMorphFlag( v );
 
-            if ( POST.contains( v ) )
+            if ( flag != null )
             {
-                ( (LF) this.stack.peek() ).lemma.post = tech.bottex.morphological.POST.get( v );
+                ( (LF) this.stack.peek() ).lemma.morphFlags.add( flag );
             }
 
             item = UNKNOWN;
@@ -175,16 +173,5 @@ public final class ContextHandler extends DefaultHandler2
     public List< Lemma > getLemmata()
     {
         return this.dictionary.lemmata.lemmas;
-    }
-
-    static
-    {
-        Set< String > tmp = new TreeSet<>();
-        for ( POST post : tech.bottex.morphological.POST.values() )
-        {
-            tmp.add( post.name() );
-        }
-
-        POST = Collections.unmodifiableSet( tmp );
     }
 }

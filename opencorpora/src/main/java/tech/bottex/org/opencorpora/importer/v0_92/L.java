@@ -11,4 +11,10 @@ class L extends LF
     {
         super( lemma );
     }
+
+    @Override
+    public String toString()
+    {
+        return "L []";
+    }
 }

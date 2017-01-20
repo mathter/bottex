@@ -20,4 +20,10 @@ public class Dictionary extends Item
         this.version = version;
         this.revision = revision;
     }
+
+    @Override
+    public String toString()
+    {
+        return "Dictionary []";
+    }
 }
