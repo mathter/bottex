@@ -114,13 +114,16 @@ public final class ContextHandler extends DefaultHandler2
             break;
 
         case TAG_L:
-            ( (Lemma) this.stack.peek() ).text = attributes.getValue( "t" );
-            item = new L( (Lemma) this.stack.peek() );
+            Lemma lemma = (Lemma) this.stack.peek();
+            lemma.text = attributes.getValue( "t" );
+            item = lemma;
             break;
 
         case TAG_F:
-            ( (Lemma) this.stack.peek() ).forms.add( attributes.getValue( "t" ) );
-            item = new F( (Lemma) this.stack.peek() );
+            Form form = new Form();
+            form.text = attributes.getValue( "t" );
+            ( (Lemma) this.stack.peek() ).forms.add( form );
+            item = form;
             break;
 
         case TAG_G:
@@ -129,7 +132,7 @@ public final class ContextHandler extends DefaultHandler2
 
             if ( flag != null )
             {
-                ( (LF) this.stack.peek() ).lemma.morphFlags.add( flag );
+                ( (LF) this.stack.peek() ).morphFlags.add( flag );
             }
 
             item = UNKNOWN;

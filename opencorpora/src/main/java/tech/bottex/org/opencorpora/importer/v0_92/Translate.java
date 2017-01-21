@@ -10,6 +10,7 @@ import tech.bottex.morphological.russian.CAse;
 import tech.bottex.morphological.russian.COMMON;
 import tech.bottex.morphological.russian.GNdr;
 import tech.bottex.morphological.russian.MOod;
+import tech.bottex.morphological.russian.NMbr;
 import tech.bottex.morphological.russian.PErs;
 import tech.bottex.morphological.russian.POST;
 import tech.bottex.morphological.russian.TEns;
@@ -45,10 +46,15 @@ class Translate
 
         this.flagMappings.put( "nomn", CAse.NOMN );
         this.flagMappings.put( "gent", CAse.GENT );
+        this.flagMappings.put( "gen1", CAse.GENT );
+        this.flagMappings.put( "gen2", CAse.GENT );
         this.flagMappings.put( "datv", CAse.DATV );
         this.flagMappings.put( "accs", CAse.ACCS );
+        this.flagMappings.put( "acc2", CAse.ACCS );
         this.flagMappings.put( "ablt", CAse.ABLT );
         this.flagMappings.put( "loct", CAse.LOCT );
+        this.flagMappings.put( "loc1", CAse.LOCT );
+        this.flagMappings.put( "loc2", CAse.LOCT );
         this.flagMappings.put( "voct", CAse.VOCT );
 
         this.flagMappings.put( "Abbr", COMMON.ABBR );
@@ -75,6 +81,9 @@ class Translate
 
         this.flagMappings.put( "indc", MOod.INDC );
         this.flagMappings.put( "impr", MOod.IMPR );
+
+        this.flagMappings.put( "sing", NMbr.SING );
+        this.flagMappings.put( "plur", NMbr.PLUR );
 
         this.flagMappings.put( "1per", PErs.PER1 );
         this.flagMappings.put( "2per", PErs.PER2 );

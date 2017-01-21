@@ -22,7 +22,8 @@ public class Dump
         sb.append( '\n' );
         sb.append( morphLexeme.getNormalized() );
         sb.append( '\n' );
-
+        sb.append( "------------------------" );
+        sb.append( '\n' );
         morphLexeme.getMorphFlags().stream().forEach( f -> sb.append( toString( f, locale ) ).append( '\n' ) );
 
         sb.append( "------ end lexeme ------" );

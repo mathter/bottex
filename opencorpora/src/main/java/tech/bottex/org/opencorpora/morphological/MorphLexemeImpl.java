@@ -1,7 +1,9 @@
 package tech.bottex.org.opencorpora.morphological;
 
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import tech.bottex.lexical.LexemeImpl;
 import tech.bottex.lexical.Type;
@@ -15,14 +17,15 @@ public class MorphLexemeImpl extends LexemeImpl implements MorphLexeme
 {
     private static final long serialVersionUID = -1980483257448983328L;
 
-    private List< MorphFlag > morphFlags;
+    private Set< MorphFlag > morphFlags;
 
     CharSequence normalized;
 
     public MorphLexemeImpl( Type type, char[] buf, List< MorphFlag > morphFlags )
     {
         super( type, buf );
-        this.morphFlags = morphFlags;
+        this.morphFlags = new HashSet<>( morphFlags.size() );
+        this.morphFlags.addAll( morphFlags );
     }
 
     @Override

@@ -5,7 +5,7 @@ import java.lang.reflect.Field;
 /**
  * @author mathter
  */
-class FieldSetter extends Item
+class FieldSetter implements Item
 {
     private static final long serialVersionUID = 5357557226696651478L;
 

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author mathter
  */
-class Lemmata extends Item
+class Lemmata implements Item
 {
     private static final long serialVersionUID = -6747028050916345080L;
 

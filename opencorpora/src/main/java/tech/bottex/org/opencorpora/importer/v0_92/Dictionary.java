@@ -3,7 +3,7 @@ package tech.bottex.org.opencorpora.importer.v0_92;
 /**
  * @author mathter
  */
-public class Dictionary extends Item
+public class Dictionary implements Item
 {
     private static final long serialVersionUID = 2837730765786311143L;
 

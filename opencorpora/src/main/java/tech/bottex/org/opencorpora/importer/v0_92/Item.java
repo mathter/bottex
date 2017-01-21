@@ -5,7 +5,6 @@ import java.io.Serializable;
 /**
  * @author mathter
  */
-abstract class Item implements Serializable
+public interface Item extends Serializable
 {
-    private static final long serialVersionUID = 6105729217045910404L;
 }

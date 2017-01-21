@@ -1,16 +1,16 @@
 package tech.bottex.org.opencorpora.importer.v0_92;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import tech.bottex.morphological.MorphFlag;
+
 /**
  * @author mathter
  */
-public abstract class LF extends Item
+class LF implements Item
 {
-    private static final long serialVersionUID = -2339728789523292577L;
-    
-    protected Lemma lemma;
+    private static final long serialVersionUID = 4211080501286762216L;
 
-    public LF( Lemma lemma )
-    {
-        this.lemma = lemma;
-    }
+    public List< MorphFlag > morphFlags = new ArrayList<>( 2 );
 }

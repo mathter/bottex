@@ -31,7 +31,7 @@ class LexemeAnalizer implements tech.bottex.morphological.LexemeAnalizer
             {
                 this.lemmas.stream().filter( l -> {
 
-                    return l.text.equals( lexeme.toString() ) || l.forms.stream().anyMatch( f -> f.equals( lexeme.toString() ) );
+                    return l.text.equals( lexeme.toString() ) || l.forms.stream().anyMatch( f -> f.text.equals( lexeme.toString() ) );
                 } ).forEach( l -> {
 
                     MorphLexemeImpl morphLexeme = new MorphLexemeImpl( lexeme.getType(), lexeme.asCharArray(), l.morphFlags );
@@ -42,6 +42,7 @@ class LexemeAnalizer implements tech.bottex.morphological.LexemeAnalizer
             } else
             {
                 MorphLexemeImpl morphLexeme = new MorphLexemeImpl( lexeme.getType(), lexeme.asCharArray(), new ArrayList<>( 0 ) );
+                morphLexeme.normalized = new String( lexeme.asCharArray() );
 
                 result.add( morphLexeme );
             }

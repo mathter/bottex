@@ -3,12 +3,10 @@ package tech.bottex.org.opencorpora.importer.v0_92;
 import java.util.ArrayList;
 import java.util.List;
 
-import tech.bottex.morphological.MorphFlag;
-
 /**
  * @author mathter
  */
-public class Lemma extends Item
+public class Lemma extends Form implements Item
 {
     private static final long serialVersionUID = 1368654081679443156L;
 
@@ -16,11 +14,7 @@ public class Lemma extends Item
 
     int rev;
 
-    public List< MorphFlag > morphFlags = new ArrayList<>( 3 );
-
-    public String text;
-
-    public final List< String > forms = new ArrayList<>();
+    public final List< Form > forms = new ArrayList<>( 10 );
 
     @Override
     public String toString()

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author mathter
  */
-final class Grammemes extends Item
+final class Grammemes implements Item
 {
     private static final long serialVersionUID = -295157406560270085L;
 
